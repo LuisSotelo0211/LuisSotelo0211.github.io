@@ -31,7 +31,7 @@
       name="twitter:image"
       content="https://luissotelo0211.github.io/assets/linkedin-preview.png"
     />
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
   </head>
   <body>
     <header class="site-header" aria-label="Navegación principal">
@@ -48,6 +48,7 @@
       <nav class="nav-links" aria-label="Secciones">
         <a href="#experiencia">Experiencia</a>
         <a href="#stack">Competencias</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#casos">Casos</a>
         <a href="#formacion">Formación</a>
         <a href="#contacto">Contacto</a>
@@ -66,7 +67,8 @@
             alineando negocio, desarrollo y QA para entregar software confiable, trazable y listo para producción.
           </p>
           <div class="hero-actions" aria-label="Acciones principales">
-            <a class="button primary" href="assets/Luis_Sotelo_CV_QA_Automation_Engineer.docx" download>Descargar CV</a>
+            <a class="button primary" href="#proyectos">Ver proyectos</a>
+            <a class="button secondary" href="assets/Luis_Sotelo_CV_QA_Automation_Engineer.docx" download>Descargar CV</a>
             <a class="button secondary" href="https://wa.me/51907966806?text=Hola%20Luis%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte." target="_blank" rel="noopener">Contactar</a>
           </div>
           <dl class="signal-grid" aria-label="Resumen profesional">
@@ -158,7 +160,7 @@
             <article>
               <span class="skill-type">Técnico</span>
               <h3>QA Automation</h3>
-              <p>Selenium WebDriver, Cucumber, Gherkin, Serenity BDD, JUnit, Maven, automatización QA y regresión.</p>
+              <p>Playwright, Selenium WebDriver, Cucumber, Gherkin, Serenity BDD, JUnit, Maven, automatización QA y regresión.</p>
             </article>
             <article>
               <span class="skill-type">Técnico</span>
@@ -183,7 +185,79 @@
             <article>
               <span class="skill-type">Proyecto</span>
               <h3>Agilidad y mejora continua</h3>
-              <p>Scrum, Kanban, CI/CD, Jenkins, Git, GitHub, Bitbucket, comunicación efectiva, análisis y resolución de problemas.</p>
+              <p>Scrum, Kanban, CI/CD, Git, GitHub, Bitbucket, comunicación efectiva, análisis y resolución de problemas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-label">Proyectos</div>
+        <div class="section-body">
+          <div class="projects-heading">
+            <div>
+              <p class="eyebrow">Automatización en práctica</p>
+              <h2 id="projects-title">Proyectos destacados de QA Automation</h2>
+            </div>
+            <p>
+              Suites públicas creadas para demostrar automatización frontend y backend con
+              escenarios reproducibles, arquitectura mantenible y reportes de ejecución.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured-project">
+              <div class="project-card-topline">
+                <span class="project-type">E2E · Frontend</span>
+                <span class="project-count">6 escenarios</span>
+              </div>
+              <h3>Automatización de Sauce Demo</h3>
+              <p>
+                Suite de pruebas funcionales para login, carrito y checkout, desarrollada con
+                Playwright, Cucumber y TypeScript bajo el patrón Page Object Model.
+              </p>
+              <ul class="project-tags" aria-label="Tecnologías del proyecto frontend">
+                <li>Playwright</li>
+                <li>TypeScript</li>
+                <li>Cucumber</li>
+                <li>Gherkin</li>
+                <li>POM</li>
+              </ul>
+              <ul class="project-highlights">
+                <li>Cobertura de login, carrito y checkout.</li>
+                <li>Page Objects para separar páginas y escenarios.</li>
+                <li>Ejecución por tags, validación de tipos y reportes HTML.</li>
+              </ul>
+              <a class="project-link" href="https://github.com/LuisSotelo0211/reto-qa-frontend-saucedemo" target="_blank" rel="noopener">
+                Ver proyecto en GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-type">API · Backend</span>
+                <span class="project-count">10 escenarios</span>
+              </div>
+              <h3>Automatización de API ServeRest</h3>
+              <p>
+                Suite de pruebas API para operaciones CRUD de usuarios, con escenarios Happy y
+                Unhappy Path, datos dinámicos y reportes automatizados.
+              </p>
+              <ul class="project-tags" aria-label="Tecnologías del proyecto backend">
+                <li>Karate DSL</li>
+                <li>Java</li>
+                <li>Maven</li>
+                <li>API Testing</li>
+                <li>JSON</li>
+              </ul>
+              <ul class="project-highlights">
+                <li>CRUD de usuarios con Happy y Unhappy Paths.</li>
+                <li>Datos de prueba generados dinámicamente.</li>
+                <li>Ejecución con Maven y reportes de pruebas.</li>
+              </ul>
+              <a class="project-link" href="https://github.com/LuisSotelo0211/reto-qa-backend-serverest" target="_blank" rel="noopener">
+                Ver proyecto en GitHub <span aria-hidden="true">↗</span>
+              </a>
             </article>
           </div>
         </div>
